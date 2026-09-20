@@ -31,12 +31,15 @@ ament_target_dependencies(motor_sim_node rclcpp std_msgs)
 add_executable(torque_pub_node src/torque_pub_node.cpp)
 ament_target_dependencies(torque_pub_node rclcpp std_msgs)
 add_executable(pid_node src/pid_node.cpp)
+add_executable(angle_pid_node src/angle_pid_node.cpp)
 ament_target_dependencies(pid_node rclcpp std_msgs)
+ament_target_dependencies(angle_pid_node rclcpp std_msgs)
 
 install(TARGETS
   motor_sim_node
   torque_pub_node
   pid_node
+  angle_pid_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
