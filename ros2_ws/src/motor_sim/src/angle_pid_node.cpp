@@ -58,7 +58,7 @@ public:
         this->declare_parameter<double>("pos_i_limit", 5.0);
         this->declare_parameter<double>("pos_out_limit", 1.0);
 
-        this->declare_parameter<double>("vel_kp", 1.5);
+        this->declare_parameter<double>("vel_kp", 1.0);
         this->declare_parameter<double>("vel_ki", 0.3);
         this->declare_parameter<double>("vel_kd", 0.3);
         this->declare_parameter<double>("vel_i_limit", 10.0);
