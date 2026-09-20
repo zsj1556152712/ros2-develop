@@ -55,8 +55,9 @@ private:
         std::vector<double> v(window.begin(), window.end());
         std::sort(v.begin(), v.end());
         int n = v.size();
-        if (n % 2 == 1) return v[n/2];
-    return (v[n/2 - 1] + v[n/2]) / 2.0;
+        if (n % 2 == 1)
+            return v[n / 2];
+        return (v[n / 2 - 1] + v[n / 2]) / 2.0;
     }
 
     double alpha_;
